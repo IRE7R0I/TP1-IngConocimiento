@@ -1,5 +1,5 @@
-nombre = "Julia"
-apellido = "Roberts"
-nombreCompleto = nombre + " " + apellido
+name = "Julia"
+lastName = "Roberts"
+nameComplete = name + " " + lastName
 
-print(nombreCompleto)
+print(nameComplete)

@@ -1,6 +1,6 @@
 print("Hola, buenas tardes!")
 
 print("De que pais eres??")
-paisResidencia = input()
+residenceCountry = input()
 
-print("Mandale saludos a",paisResidencia)
+print("Mandale saludos a",residenceCountry)

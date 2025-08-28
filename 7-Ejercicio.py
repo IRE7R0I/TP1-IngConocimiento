@@ -1,3 +1,3 @@
-materia = "Ingeniería del conocimiento"
+matter = "Ingeniería del conocimiento"
 
-print("Estas estudiando " + materia)
+print("Estas estudiando " + matter)

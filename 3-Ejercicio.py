@@ -1,2 +1,2 @@
-nombre = input("Tu nombre es -> ")
-print("Hola chiquitin,",nombre)
+name = input("Tu nombre es -> ")
+print("Hola chiquitin,",name)
