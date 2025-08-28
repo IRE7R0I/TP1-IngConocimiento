@@ -9,3 +9,25 @@ inventario = {
 }
 actualizar_inventario(tienda="Tienda A", producto_1=10, producto_2=-5)
 '''
+
+# Initial inventory
+store_inventory = {
+    "Store_A": {"product_1": 50, "product_2": 30},
+    "Store_B": {"product_1": 20, "product_2": 40}
+}
+
+def update_inventory(store_name, **updated_products):
+    # Check if the store exists
+    if store_name not in store_inventory:
+        print(f"Store '{store_name}' not found in inventory.")
+        return store_inventory
+
+    # Update each product
+    for product_name, quantity_change in updated_products.items():
+        if product_name in store_inventory[store_name]:
+            store_inventory[store_name][product_name] += quantity_change
+        else:
+            # Add new product if it doesn't exist
+            store_inventory[store_name][product_name] = quantity_change
+
+    return store_inventory
